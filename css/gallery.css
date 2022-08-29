@@ -1,0 +1,46 @@
+
+.courses {
+    margin-top: 2rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__info {
+    padding: 0.5rem 0.5rem 0;
+}
+
+.course__info p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ************************************ MEDIA QUERIES (TABLETS) ************************************ */
+
+
+@media screen and (max-width: 1024px) {
+    .courses__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .courses__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
