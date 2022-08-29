@@ -123,6 +123,21 @@ nav {
     align-items: center;
 }
 
+.nav__container img {
+    width: 188.68px; 
+    height: 40.24px;
+}
+
+#open-menu-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+#close-menu-btn img {
+    width: 16px;
+    height: 16px;
+}
+
 nav button {
     display: none;
 }
