@@ -422,7 +422,6 @@ img {
 .faqs {
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-width:100%;
 }
 
 .faqs__container {
