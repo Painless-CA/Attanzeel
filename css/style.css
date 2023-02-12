@@ -33,7 +33,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: /*var(--color-bg);*/
+    background: var(--color-bg); 
 }
 
 .container {
