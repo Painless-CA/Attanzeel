@@ -33,7 +33,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: var(--color-bg); 
+    background: var(--color-bg);
 }
 
 .container {
@@ -69,6 +69,7 @@ h3 {
 h4 {
     font-size: 1.3rem;
 }
+
 a {
     color: var(--color-white);
 }
@@ -129,7 +130,7 @@ nav {
 }
 
 #open-menu-btn img {
-    width: 18px;
+    width: 16px;
     height: 16px;
 }
 
@@ -187,21 +188,15 @@ header {
 
 
 /* ******************** SLIDES ******************** */
-* {
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Verdana, sans-serif;
-}
-
-.mySlides {
-    display: none;
-}
 
 img {
     vertical-align: middle;
+}
 
+.slides {
+    width: 100%;
+    padding-bottom: 0;
 }
 
 .fade {
@@ -216,33 +211,14 @@ img {
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: auto;
   position: relative;
   margin: auto;
 }
 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   margin: 0 2px;
   background-color: var(--color-bg1);
   border-radius: 50%;
@@ -252,7 +228,7 @@ img {
 }
 
 .active {
-  background-color: #713efd;
+  background-color: white;
 }
 
 .fade {
@@ -271,7 +247,6 @@ img {
 .categories {
     background: var(--color-bg1);
     height: 39rem;
-    width: 100%;
 }
 
 .categories h1 {
@@ -281,19 +256,20 @@ img {
 
 .categories__container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
 }
 
 .categories__left {
     margin-right: 4rem;
 }
+
 .categories__left p {
     margin: 1rem 0 3rem;
 }
 
 .categories__right {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap: 1.2rem;
 }
 
@@ -301,7 +277,7 @@ img {
     background: var(--color-bg2);
     padding: 2rem;
     border-left: 3px solid white;
-    border-radius: 10px;
+    
     transition: var(--transition);
 }
 
@@ -316,56 +292,35 @@ img {
 .category:nth-child(2) .category__icon{
     background: var(--color-danger);
 }
-.category:nth-child(2) .category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
+
 
 .category:nth-child(3) .category__icon{
     background: var(--color-success);
 }
-.category:nth-child(3) .category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
+
 
 .category:nth-child(4) .category__icon{
     background: var(--color-warning);
 }
-.category:nth-child(4) .category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
+
 
 .category:nth-child(5) .category__icon{
     background: blue;
 }
-.category:nth-child(5) .category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
+
 
 .category:nth-child(6) .category__icon{
     background: var(--color-primary);
 }
-.category:nth-child(6) .category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
+
 
 .category__icon {
     background: var(--color-primary);
     padding: 0.7rem;
-    border-radius: 0.9rem;
+  
     transition: var(--transition);
     border: 1px solid transparent;
 }
-
-.category__icon:hover{
-    background: transparent;
-    border-color: white;
-}
-
 
 .category h5 {
     margin: 0.5rem 0 1rem;
@@ -690,10 +645,10 @@ footer ul li a:hover {
           height: auto;
       }
 
-      .categories__container {
+     .categories__container {
           grid-template-columns: 1fr;
           gap: 3rem;
-      }
+      } 
 
       .categories__left {
           margin-right: 0;
@@ -736,7 +691,7 @@ footer ul li a:hover {
 
     /* ***************************** NAVBAR *************************** */
     .nav__menu {
-        right: 0;
+        right: 3%;
     }
 
     /* ***************************** HEADER *************************** */
@@ -762,14 +717,14 @@ footer ul li a:hover {
 
     /* ***************************** HEADER *************************** */
 
-    .categories__right {
+    /* .categories__right {
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
-    }
+    } */
 
     .category {
         padding: 1rem;
-        border-radius: 1rem;
+        
     }
 
     /* ***************************** POPULAR ACTIVITIES *************************** */
