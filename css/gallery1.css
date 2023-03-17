@@ -1,0 +1,61 @@
+
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.gallery1 {
+    margin: 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.gallery1 img {
+    
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+
+.gallery1 img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.back {
+    margin: 50px 60px;
+}
+
+.back a {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.back a:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+/* ************************************ MEDIA QUERIES (TABLETS) ************************************ */
+
+
+ @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+} 
